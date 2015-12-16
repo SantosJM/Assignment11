@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 11: Part 2 - jQuery Mobile Employee Directory</title>
+    <meta charset="UTF-8">
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+    <!-- jQuery js -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- jQuery Mobile js -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/employeeSearch.js"></script>
+    <script src="js/employeeDetails.js"></script>
+    <script src="js/directReports.js"></script>
+
+</head>
+
+<body>
+    <!-- HOME -->
+    <div data-role="page" id="home">
+        <header data-role="header">
+            <h1>Directory</h1>
+        </header>
+
+        <section data-role="content">
+            <!-- filter box -->
+            <ul id="employeeSearch" data-role="listview" data-filter="true" data-filter-reveal="true" data-autodividers="true" data-filter-placeholder="Search for Employees"></ul><br>
+            <!-- add data-inset="true" -->
+            <!-- add data-filter-theme="b" if any -->
+
+            <h2>Welcome to Directory!</h2>
+            <p>Simply type in a letter in the search box above to filter through the Vecta Corp. employee directory.</p>
+            <p>&#42;This is a sample application that demonstrates a simple employee directory built using jQuery Mobile.</p>
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>&copy;2015 Vecta Corp.</h4>
+        </footer>
+    </div>
+
+
+    <!-- Employee DETAILS PAGE -->
+    <div data-role="page" id="employeeDetails">
+        <header data-role="header">
+            <a href="#home" data-role="button" class="ui-btn ui-btn-icon-left ui-icon-back">Back</a>
+            <h1>Employee Details</h1>
+            <a href="#home" data-role="button" class="ui-btn ui-btn-icon-right ui-icon-search">Search</a>
+        </header>
+
+        <section data-role="content">
+
+            <div id="individual"></div>
+
+            <ul data-role="listview" data-inset="true" id="individualDetails"></ul>
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>&copy;2015 Vecta Corp.</h4>
+        </footer>
+    </div>
+
+    <!-- DIRECT REPORTS PAGE -->
+    <div data-role="page" id="directReports">
+        <header data-role="header">
+            <a href="#home" data-role="button" class="ui-btn ui-btn-icon-left ui-icon-back">Back</a>
+            <h1>Direct Reports</h1>
+            <a href="#home" data-role="button" class="ui-btn ui-btn-icon-right ui-icon-search">Search</a>
+        </header>
+
+        <section data-role="content">
+
+            <ul data-role="listview" data-inset="true" id="reportsList"></ul>
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>&copy;2015 Vecta Corp.</h4>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
